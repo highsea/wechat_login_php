@@ -1,9 +1,11 @@
 <?php
-/*if ($_SESSION['access_token'] != $_SESSION['access_token']){
-    echo "不能刷新本页面"
-};*/
 session_start();
 $_SESSION["access_token"] = "none";
+$_SESSION["refresh_token"] = 'none';
+$_SESSION["scope"] = 'none';
+$_SESSION["openid"] = 'none';
+$_SESSION["code"] = '';
+$_SESSION["state"] = '';
 
 
 ?>
